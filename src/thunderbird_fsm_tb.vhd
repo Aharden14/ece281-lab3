@@ -121,7 +121,9 @@ begin
         wait for k_clk_period;
           assert w_thunderbird = "000110" report "should turn on second right light" severity failure;
         wait for k_clk_period;
-          assert w_thunderbird = "000111" report "should turn on third right light" severity failure;    
+          assert w_thunderbird = "000111" report "should turn on third right light" severity failure;  
+        wait for k_clk_period;
+          assert w_thunderbird = "000000" report "should trnsition off" severity failure;  
           
         w_reset <= '1';
 		wait for k_clk_period;
