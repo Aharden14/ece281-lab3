@@ -85,9 +85,9 @@ begin
           i_right => w_R,
           i_reset => w_reset,
           i_clk => w_clk,
-          o_lights_L(0) => w_thunderbird(5),
+          o_lights_L(0) => w_thunderbird(3),
           o_lights_L(1) => w_thunderbird(4),
-          o_lights_L(2) => w_thunderbird(3),
+          o_lights_L(2) => w_thunderbird(5),
           o_lights_R(0) => w_thunderbird(2),
           o_lights_R(1) => w_thunderbird(1),
           o_lights_R(2) => w_thunderbird(0)

@@ -115,9 +115,9 @@ begin
 	f_Q_next(6) <= f_Q(7) and i_left and i_right;
 	f_Q_next(7) <= (f_Q(7) and not i_left and not i_right) or f_Q(6) or f_Q(3) or f_Q(0);
 	
-	o_lights_L(2) <= f_Q(6) or f_Q(2) or f_Q(1) or f_Q(0);
+	o_lights_L(0) <= f_Q(6) or f_Q(2) or f_Q(1) or f_Q(0);
 	o_lights_L(1) <= f_Q(6) or f_Q(1) or f_Q(0);
-	o_lights_L(0) <= f_Q(6) or f_Q(0);
+	o_lights_L(2) <= f_Q(6) or f_Q(0);
 	o_lights_R(0) <= f_Q(6) or f_Q(5) or f_Q(4) or f_Q(3);
 	o_lights_R(1) <= f_Q(6) or f_Q(4) or f_Q(3);
 	o_lights_R(2) <= f_Q(6) or f_Q(3);
